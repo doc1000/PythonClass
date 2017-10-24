@@ -1,0 +1,51 @@
+## We are going over dictionary terms
+
+my_d = {'Colorad':'Denver','Utah':'SLC'}
+assigning key, value pairs
+can use .items(), .key(), .values()
+for key,value in my_d.items():
+
+there can be a BIG O - performance - advantages of dictionaries over lists because in a list, with an index, the computer cycles thru each item until it finds what it is looking for.  dictionary uses key to directly hash to value and does not ahve a fixed order.  so in small sets its similar, but in big sets dictionaries are way faster... essentially relational
+
+## Sets
+my_set = {1,2,3}
+
+can use a set to grab out unique values from a list.  also performance advantage.   no_dupes
+
+can do venn diagram work on sets.  union, intersection, difference
+between two sets
+1 in my_set   ---> true
+easy way to compare lists
+
+nDupSet = set(['Alicia','Doster','John'])
+
+
+## Comprehend
+accumulator = [x **2 for x in range(10)]
+as an alternative to iterating thru a range and appending to a list
+
+adding an if statement
+accumulator = [x **2 for x in range(10) if x % 2 == 0]
+
+can do something simple with a dictionary
+for animal in animals:
+  pop = randint(1,10)
+  acc[animal] = pop
+
+acc = {animal: radint(1,10) for animal in animals}
+- can I put together two lists into a dictionary, or the index and value from list to dictionary
+
+you can also do the same thing with tuples.  can be faster than a list because it doesn't ahve overhead
+
+can assign a list to a set as well to make it searchable quickly by value - much faster.
+
+## functions and methods
+take arguments and return a value
+def squares_of_evens(upper_bound):
+  return [x ** 2 for x in range(upper_bound) if x % 2 == 0]
+
+print squares_of_evens())
+
+def square_and_cube(x):
+  return {'square': x**2, 'cube': x**3}
+print(square_and_cube(3))

@@ -1,0 +1,9 @@
+Week1 Day2
+
+can run python from cmmd shell, can also run iPython (need to fix PATH)
+can run from something called jupyter as well - web based
+cntr-c to exit
+
+you can use "None" in .py as a proxy for Null
+
+# you can launch jupyter notebook with ath term from the bash

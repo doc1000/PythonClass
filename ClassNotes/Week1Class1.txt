@@ -1,0 +1,120 @@
+Alicia
+
+Taryn - lead data scientist
+Tara - head of the class
+
+wifi: galvanizeEDU
+pw:   schoolhouserock
+
+UX - user experience
+
+automation of tasks using the command line
+
+
+why pythong vs R - integrated part of data flow, general purpose programming language - can do way more without leaving the python environment -  maybe less i/o or handoff
+
+
+why linux vs windows
+saying that windows tends to focus on closed systems, while Linux (yes) and macOS(?) are a bit more wide open
+
+- most importantly the broader class ONLY lets you use macOS and linux.  so maybe go get a linux box.
+
+
+Excel - doesn't integrate as well - more visual
+
+they like unix based because the code tends to be more open source which leads to faster devp
+
+remember on unix - case sensitive
+	/ is the file sepe
+s
+	.exe - text after the dot gives a hint what program does and how to run it
+
+relative path is always relative to the current working directory - works down from below
+absolute pathname is from the rootfile of the system - begins with the slash - solid but if run on a diff computer paths may not be the same
+
+GIT - pretty much just an alternative to command prompt for unix
+
+Navi:
+pwd	present working dir
+cd	change dir 	
+ls	lists files
+
+creating and removing 
+mkdir	make a directory
+rmdir	remove a directory
+rm -r	remove a file, remvoes files recursively, whether empty or not
+
+creating adn removing
+touch - creates an empty file or updates the access time on existing file
+rm	thsi removes a file - does not create any backup
+
+copy
+cp	copy a file
+mv	moving a file, or move to a new name
+cp -r	copies everything recursively, meaning everything in subdirectories
+
+clear 	clears screen and pushes to the top
+
+you can use ..  and ../.. to go previous direcdtories, either to cd or ls
+
+cntl a and ctrl e moves back and front in bash
+
+you can paginate the ls results using the | less ("pipe less") - otherwise called "less"
+to escape you have to hit "q" as in quit
+you can hit "g" to go up
+"/py" to look for py
+
+
+this is what pipe does:
+ std In ---> PROCESS  --> stdoutput (cmd prompt)
+		      --> stdErr 
+
+into to GIT:
+essentially just a distributed version control system
+there will be local GIT that will track changes locally on specific files
+
+
+
+
+make sure you are committing changes so that what "worked" is saved and you don't make multiple changes
+
+two ways to make a git is to 'init' from bash and its also and most likely going to be cloned from github
+
+git init in bash
+ls .git/ to see files.  don't mess with them
+
+launch atom: "atom ."
+
+git commit
+git add filename
+
+remote repositories live in teh clud and enable synchronizing
+
+GitHub is a web service that provides remote repositories, others such as Bitbucket
+
+two programmers with git: Alice and Bob
+
+
+cline a local repository from remote repo - like enchance copy
+
+make change and commit them
+
+push tyour changes to remote
+
+pull other people canges from the remote
+
+need to figure out how to open atom directly from bash
+i'm guessing I need to put it in a path file or something
+
+use less to open a file in bash less 2015_data.csv
+
+grep 'GOOG' 2015_data.csv | less
+			  | sort
+
+
+use --help or -? instead of 'man' (manual)
+
+grep 'GOOG' 2015_data.csv | sort > 2015_data_sorted.csv
+
+
+I have VI editor as default - not sure alternative, need to escape commit screen by hitting esc + :wq
