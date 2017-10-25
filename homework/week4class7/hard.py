@@ -4,10 +4,7 @@ class OurClass():
         self.location = location
         self.size = size
         # self.questions_asked = []
-        if self.size >= 20:
-            self.at_capacity = True
-        else:
-            self.at_capacity = False
+        self.check_if_at_capacity()
         if members == None:
             self.members = []
         else:
@@ -15,7 +12,11 @@ class OurClass():
         pass
 
     def check_if_at_capacity(self):
-       return self.at_capacity
+        if self.size >= 31:
+            self.at_capacity = True
+        else:
+            self.at_capacity = False
+        return self.at_capacity
 
    # def add_question_asked(self, question):
    #      self.questions_asked.append(question)
@@ -24,8 +25,9 @@ class OurClass():
         self.members.append(member)
         self.size += 1
 
-        if self.size >= 20:
-            print('Capacity Reached!!')
-            self.at_capacity = True
+        self.check_if_at_capacity()
+        # if self.size >= 20:
+        #     print('Capacity Reached!!')
+        #     self.at_capacity = True
 
 # myC = OurClass('english','galv',14)
