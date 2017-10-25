@@ -35,6 +35,9 @@ class OurClass():
     def get_num_questions_asked(self):
         return sum([len(mem.questions_asked) for mem in self.members])
 
+    def get_num_lines_code(self):
+        return sum([mem.lines_of_code for mem in self.members])
+
 # myC = OurClass('english','galv',14)
 
 class Member():
