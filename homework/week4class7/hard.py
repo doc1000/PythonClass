@@ -41,8 +41,13 @@ class Member():
         self.questions_asked = []
         self.lines_of_code = ''
         self.num_lines_coded = 0
+        self.coding_level = 'beginner'
 
     def added_code_line(self,line_of_code):
         self.lines_of_code += line_of_code
         self.num_lines_coded += 1
-        
+
+    def get_coding_level(self):
+        my_levels = [(-1,'beginner'),(100,'novice'),(1000,'intermediate'),(10000,'expert')]
+        self.coding_level = max([(x,y) for x,y in my_levels if self.num_lines_coded > x])[1]
+        return self.coding_level
