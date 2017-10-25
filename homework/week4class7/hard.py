@@ -31,6 +31,10 @@ class OurClass():
         #     print('Capacity Reached!!')
         #     self.at_capacity = True
 
+
+    def get_num_questions_asked(self):
+        return sum([len(mem.questions_asked) for mem in self.members])
+
 # myC = OurClass('english','galv',14)
 
 class Member():
