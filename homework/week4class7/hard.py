@@ -20,8 +20,9 @@ class OurClass():
    # def add_question_asked(self, question):
    #      self.questions_asked.append(question)
 
-    def add_class_members(self, num):
-        self.size += num
+    def add_class_members(self, member):
+        self.members.append(member)
+        self.size += 1
 
         if self.size >= 20:
             print('Capacity Reached!!')
