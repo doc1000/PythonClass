@@ -11,6 +11,7 @@ class OurClass():
             self.members = members
         pass
 
+
     def check_if_at_capacity(self):
         if self.size >= 31:
             self.at_capacity = True
@@ -31,3 +32,17 @@ class OurClass():
         #     self.at_capacity = True
 
 # myC = OurClass('english','galv',14)
+
+class Member():
+    def __init__(self,name, hair_color, birthdate):
+        self.name = name
+        self.hair_color=hair_color
+        self.birthdate=birthdate
+        self.questions_asked = []
+        self.lines_of_code = ''
+        self.num_lines_coded = 0
+
+    def added_code_line(self,line_of_code):
+        self.lines_of_code += line_of_code
+        self.num_lines_coded += 1
+        
